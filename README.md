@@ -158,7 +158,6 @@ implementation:
 -   Ubuntu: Development and testing environment.
 
 Team responsibilities
-
   -----------------------------------------------------------------------
   Team member                         Main area of work
   ----------------------------------- -----------------------------------
@@ -171,7 +170,7 @@ Team responsibilities
   Person 3 (PES1UG25CS235)            Worker implementation, job
                                       execution, monitoring and failure
                                       handling
-  -----------------------------------------------------------------------
+
 
 Each member can develop their part separately at first. We will then
 connect the modules through the agreed TCP communication format and test

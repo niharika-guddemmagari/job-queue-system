@@ -1,5 +1,16 @@
-
-venv/
+# Python
 __pycache__/
 *.pyc
-.env
+venv/
+.venv/
+
+# Editor / backup leftovers
+*.bak
+*.backup
+*.save
+*.save.*
+*.sdn_backup
+*.before_sdn
+*_backup/
+*_backup.py
+*~

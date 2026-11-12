@@ -10,14 +10,14 @@ dashboard for monitoring jobs, workers and the topology.
 .
 ├── topology.py          # Mininet topology: 6 hosts, 4 switches (redundant path, STP)
 ├── dashboard.py         # Web dashboard on http://localhost:8080
-├── ank/                 # Job manager + worker
+├── worker/                 # Job manager + worker
 │   ├── job_manager.py   #   listens on 10.0.0.1:5000, scheduling, retries
 │   ├── worker.py        #   registers with the manager, sends heartbeats, runs jobs
 │   └── README.md        #   standalone (no-Mininet) run instructions
-├── me/                  # Client side
+├── client/                  # Client side
 │   ├── client.py        #   interactive TCP client (submit job, query status/result)
 │   └── benchmark.py     #   benchmark client
-└── nih/                 # Queue, scheduling, registry, SDN integration
+└── controller/                 # Queue, scheduling, registry, SDN integration
     ├── job_queue.py
     ├── scheduler.py
     ├── worker_registry.py
@@ -85,3 +85,8 @@ Supported job types: `sum`, `max`, `factorial`.
 - Worker start/stop from the dashboard uses `mnexec` and PID files in `/tmp`.
 - `MANAGER_NAMESPACE_PID` falls back to the value hardcoded in `dashboard.py`;
   it changes every Mininet session, so set it each time.
+## team contribution
+Person     	                          Part
+Jyotirmayee Pradhan(PES1UG25CS232)	  Client: client.py submits jobs and queries results, benchmark.py measures ACK latency
+Guddemma Gari Niharika(PES1UG25CS193) Queue, scheduler, worker registry, worker_control.py, SDN adapter and Ryu client
+KV Ankush(PES1UG25CS235)              Job manager and workers: connections, dispatch, heartbeats, retries

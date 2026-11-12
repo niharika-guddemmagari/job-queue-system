@@ -86,7 +86,7 @@ Supported job types: `sum`, `max`, `factorial`.
 - `MANAGER_NAMESPACE_PID` falls back to the value hardcoded in `dashboard.py`;
   it changes every Mininet session, so set it each time.
 ## team contribution
-Person     	                          Part
-Jyotirmayee Pradhan(PES1UG25CS232)	  Client: client.py submits jobs and queries results, benchmark.py measures ACK latency
-Guddemma Gari Niharika(PES1UG25CS193) Queue, scheduler, worker registry, worker_control.py, SDN adapter and Ryu client
-KV Ankush(PES1UG25CS235)              Job manager and workers: connections, dispatch, heartbeats, retries
+Name	SRN	Part	Folder
+Jyotirmayee Pradhan	PES1UG25CS232	Client: client.py submits jobs and queries results, benchmark.py measures ACK latency	me/
+Guddemma Gari Niharika	PES1UG25CS193	Queue, scheduler, worker registry, worker_control.py, SDN adapter and Ryu client	nih/
+KV Ankush	PES1UG25CS235	Job manager and workers: connections, dispatch, heartbeats, retries	ank/
